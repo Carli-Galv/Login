@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>FoxDB</title>
+	<link rel="stylesheet" href="Login.css">
+
+
+							<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+	crossorigin="anonymous">
+
+</head>
+<body>
+	<h1 class="text-light">Fox DataBase</h1>
+	<form class="form border border-3 rounded p-3" @submit.prevent="sendForm()">
+					<!--Username-->
+		<label class="text-light" for="email">Email:</label>
+		<input class="form-control btn-outline-light active bg-transparent m-3" type="email">
+
+					<!--Password-->
+		<label class="text-light" for="password">Contraseña:</label>
+		<input class="form-control btn-outline-light active bg-transparent m-3" type="password">
+		
+		<button class="btn btn-outline-success m-3 text-light">Entrar</button>
+
+		<a class="text-light m-3" href="#">¿Has olvidado tu contraseña?</a>
+		<a class="text-light" href="#">¿No tiene una cuenta?</a>
+	</form>
+</body>
+</html>
